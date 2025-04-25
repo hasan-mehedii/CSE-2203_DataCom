@@ -1,0 +1,2 @@
+This is the input file.
+I want to send it to the server.
