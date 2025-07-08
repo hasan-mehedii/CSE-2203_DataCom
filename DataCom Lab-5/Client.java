@@ -12,7 +12,7 @@ public class Client {
 
             String d = sc.nextLine();
 
-            String serverAddress = "10.33.2.101";
+            String serverAddress = "localhost";
             int serverPort = 5000;
 
             Socket socket = new Socket(serverAddress, serverPort);
@@ -46,38 +46,6 @@ public class Client {
             String code2 = "100100001";
 
             String Polynomial = "1101";
-
-            /*
-             * int random = rand.nextInt(5,9);
-             * 
-             * System.out.println(random);
-             * 
-             * 
-             * if(random>5)
-             * {
-             * StringBuilder sb = new StringBuilder(codeword);
-             * 
-             * String str = sb.toString();
-             * 
-             * 
-             * dos.writeUTF(str);
-             * 
-             * 
-             * 
-             * }
-             * else
-             * {
-             * StringBuilder sb = new StringBuilder(codeword);
-             * 
-             * char temp = sb.charAt(0);
-             * sb.setCharAt(0, sb.charAt(1));
-             * sb.setCharAt(1, temp);
-             * 
-             * String str = sb.toString();
-             * 
-             * dos.writeUTF(str);
-             * }
-             */
 
             dos.writeUTF(codeword);
             dos.writeUTF(Polynomial);
